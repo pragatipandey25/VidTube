@@ -1,57 +1,311 @@
-nav{
-    padding: 10px 2%;
-    justify-content: space-between;
-    box-shadow: 0 0 10px rgba(0, 0,0, 0.2);
-    background: #fff;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+/* ============================
+   STREAMIFY NAVBAR
+   YouTube-inspired modern design
+   ============================ */
+
+/* ---------- Navbar Container ---------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  padding: 0 20px;
+  background: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
-.nav-left .menu-icon{
+
+/* ---------- Left Section ---------- */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.menu-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.menu-icon:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: opacity 0.2s ease;
+}
+
+.logo:hover {
+  opacity: 0.85;
+}
+
+/* ---------- Center / Search Section ---------- */
+.nav-middle {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+  max-width: 640px; /* 550-650px range */
+  margin: 0 40px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #d3d3d3;
+  border-radius: 25px;
+  overflow: hidden;
+  background: #ffffff;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.search-box:hover {
+  border-color: #b0b0b0;
+}
+
+.search-box:focus-within {
+  border-color: #065fd4;
+  box-shadow: 0 0 0 1px #065fd4;
+}
+
+.search-box input {
+  flex: 1;
+  height: 40px;
+  padding: 0 16px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 15px;
+  color: #0f0f0f;
+}
+
+.search-box input::placeholder {
+  color: #888;
+  font-size: 15px;
+}
+
+.search-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 40px;
+  background: #f8f8f8;
+  border: none;
+  border-left: 1px solid #d3d3d3;
+  border-radius: 0 25px 25px 0;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  flex-shrink: 0;
+}
+
+.search-btn:hover {
+  background: #e8e8e8;
+}
+
+.search-btn img {
+  width: 18px;
+  height: 18px;
+}
+
+/* ---------- Right Section ---------- */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 22px; /* 20-24px gap */
+  flex-shrink: 0;
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.nav-icon:hover {
+  transform: scale(1.12);
+  opacity: 0.8;
+}
+
+.profile-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.profile-icon:hover {
+  transform: scale(1.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================
+   RESPONSIVE DESIGN
+   ============================ */
+
+/* ---------- Tablet / Medium screens (< 900px) ---------- */
+@media (max-width: 900px) {
+  .navbar {
+    padding: 0 16px;
+  }
+
+  .logo {
+    width: 160px;
+  }
+
+  .nav-middle {
+    max-width: 380px;
+    margin: 0 20px;
+  }
+
+  .search-box input {
+    height: 36px;
+    font-size: 14px;
+  }
+
+  .search-btn {
+    width: 48px;
+    height: 36px;
+  }
+
+  .nav-right {
+    gap: 18px;
+  }
+
+  .nav-icon {
     width: 22px;
-    margin-right: 25px;
+    height: 22px;
+  }
+
+  .profile-icon {
+    width: 32px;
+    height: 32px;
+  }
 }
-.nav-left .logo{
+
+/* ---------- Small screens / Tablet portrait (< 700px) ---------- */
+@media (max-width: 700px) {
+  .navbar {
+    padding: 0 12px;
+    height: 60px;
+  }
+
+  .nav-left {
+    gap: 10px;
+  }
+
+  .menu-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .nav-middle {
+    flex: 1;
+    max-width: none;
+    margin: 0 16px;
+  }
+
+  .search-box input {
+    height: 34px;
+    font-size: 14px;
+  }
+
+  .search-btn {
+    width: 44px;
+    height: 34px;
+  }
+
+  .search-btn img {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* Hide upload, apps, notification icons */
+  .upload-icon,
+  .apps-icon,
+  .notifications-icon {
+    display: none;
+  }
+
+  .nav-right {
+    gap: 12px;
+  }
+
+  .profile-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* ---------- Mobile (< 600px) ---------- */
+@media (max-width: 600px) {
+  .navbar {
+    height: 56px;
+    padding: 0 10px;
+  }
+
+  .nav-left {
+    gap: 8px;
+  }
+
+  .menu-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .logo {
     width: 130px;
-}
-.nav-middle .search-box{
-    border: 1px solid #ccc;
-    margin-right: 15px;
-    padding: 8px 12px;
-    border-radius: 25px;
-}
-.nav-middle .search-box input{
-    width: 400px;
-    border: 0;
-    outline: 0;
-    background: transparent;
-}
-.nav-middle .search-box img{
-    width: 15px;
-}
-.nav-right img{
-    width: 25px;
-    margin-right: 25px;
-}
-.nav-right .user_icon{
-    width: 35px;
-    border-radius: 50%;
-}
-@media (max-width:900px){
-    .menu-icon{
-        display: none;
-    }
-    .nav-right img{
-        display: none;
-    }
-    .nav-right .user_icon{
-        display: block;
-        width: 30px;
-    }
-    .logo{
-        width: 90px;
-    }
-    .nav-middle .search-box input {
-        width: 100px;
-    }
+  }
+
+  .nav-middle {
+    margin: 0 10px;
+  }
+
+  .search-box {
+    border-radius: 20px;
+  }
+
+  .search-box input {
+    height: 32px;
+    padding: 0 12px;
+    font-size: 13px;
+  }
+
+  .search-btn {
+    width: 38px;
+    height: 32px;
+  }
+
+  .search-btn img {
+    width: 14px;
+    height: 14px;
+  }
+
+  .nav-right {
+    gap: 8px;
+  }
 }
