@@ -163,34 +163,6 @@ The application is optimized for:
 
 ---
 
-## 📸 Screenshots
-
-### Home Page
-
-> Add your screenshot here.
-
-```text
-screenshots/home.png
-```
-
-### Video Player
-
-> Add your screenshot here.
-
-```text
-screenshots/video.png
-```
-
-### Search Results
-
-> Add your screenshot here.
-
-```text
-screenshots/search.png
-```
-
----
-
 ## 🌟 Future Enhancements
 
 - 🌙 Dark Mode
