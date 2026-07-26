@@ -1,25 +1,59 @@
+<div align="center">
+
 # 🎬 Streamify
 
-A modern **YouTube-inspired video streaming platform** built with **React.js**, **Vite**, and the **YouTube Data API v3**. Streamify allows users to browse trending videos, search for content, watch videos, and explore different categories through a clean, responsive, and intuitive interface.
+### A Modern YouTube-Inspired Video Streaming Platform
+
+Built with **React.js**, **Vite**, and the **YouTube Data API v3**
+
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-Latest-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?style=for-the-badge&logo=javascript)](https://developer.mozilla.org/docs/Web/JavaScript)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+
+**A responsive YouTube clone that lets users discover trending videos, search content, watch videos, and explore channels through the YouTube Data API v3.**
 
 ---
 
-## 🚀 Features
+### 🌐 Live Demo
 
-- 🔥 Browse trending YouTube videos
-- 🔍 Search videos in real time
-- 📺 Watch videos with an embedded YouTube player
-- 📂 Explore videos by category
+**https://your-vercel-app.vercel.app**
+
+### 📂 Repository
+
+**https://github.com/pragatipandey25/Streamify**
+
+</div>
+
+---
+
+# 📸 Preview
+
+> Add screenshots after deployment.
+
+| Home                      | Video Player               |
+| ------------------------- | -------------------------- |
+| ![](screenshots/home.png) | ![](screenshots/video.png) |
+
+---
+
+# ✨ Features
+
+- 🎥 Browse trending YouTube videos
+- 🔍 Search videos instantly
+- 📺 Embedded YouTube video player
+- 📂 Browse videos by category
 - 👤 View channel information
-- 👍 Display likes, views, and publish date
-- 📱 Fully responsive design
-- ⚡ Fast performance with Vite
-- 🎨 Modern YouTube-inspired UI
-- 🧭 React Router for seamless navigation
+- 👍 Display views, likes, and publish date
+- 📱 Fully responsive UI
+- ⚡ Fast loading with Vite
+- 🎨 Modern Streamify branding
+- 🧭 Dynamic routing with React Router
+- 📡 Fetches live data using the YouTube Data API v3
 
 ---
 
-## 🛠️ Tech Stack
+# 🛠 Tech Stack
 
 ### Frontend
 
@@ -32,18 +66,19 @@ A modern **YouTube-inspired video streaming platform** built with **React.js**, 
 
 - YouTube Data API v3
 
-### Development Tools
+### Tools
 
 - Git
 - GitHub
 - VS Code
+- Vercel
 
 ---
 
-## 📁 Project Structure
+# 📂 Project Structure
 
 ```text
-streamify/
+Streamify/
 │
 ├── public/
 │
@@ -61,52 +96,53 @@ streamify/
 │   │   ├── Search/
 │   │   └── Video/
 │   │
-│   ├── data.js
 │   ├── App.jsx
+│   ├── data.js
 │   ├── main.jsx
 │   └── index.css
 │
 ├── .env
 ├── package.json
 ├── vite.config.js
+├── vercel.json
 └── README.md
 ```
 
 ---
 
-## ⚙️ Installation
+# 🚀 Getting Started
 
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/yourusername/streamify.git
-```
-
-### 2. Navigate to the project
+## Clone the repository
 
 ```bash
-cd streamify
+git clone https://github.com/pragatipandey25/Streamify.git
 ```
 
-### 3. Install dependencies
+## Navigate to the project
+
+```bash
+cd Streamify
+```
+
+## Install dependencies
 
 ```bash
 npm install
 ```
 
-### 4. Create a `.env` file
+## Create a `.env` file
 
 ```env
 VITE_API_KEY=YOUR_YOUTUBE_API_KEY
 ```
 
-### 5. Start the development server
+## Run the development server
 
 ```bash
 npm run dev
 ```
 
-Open your browser and visit:
+Visit:
 
 ```
 http://localhost:5173
@@ -114,37 +150,35 @@ http://localhost:5173
 
 ---
 
-## 🔑 Getting a YouTube API Key
+# 🔑 YouTube API Setup
 
-1. Go to **Google Cloud Console**
-2. Create a new project.
+1. Open Google Cloud Console.
+2. Create a project.
 3. Enable **YouTube Data API v3**.
-4. Create an API Key.
-5. Add it to your `.env` file.
-
-Example:
+4. Create an API key.
+5. Add the key to your `.env` file.
 
 ```env
-VITE_API_KEY=AIzaSyXXXXXXXXXXXXXXXXXXXXXXXX
+VITE_API_KEY=YOUR_API_KEY
 ```
 
 ---
 
-## 📜 Available Scripts
+# 📜 Available Scripts
 
-Start development server:
+### Start Development Server
 
 ```bash
 npm run dev
 ```
 
-Build for production:
+### Build Production
 
 ```bash
 npm run build
 ```
 
-Preview production build:
+### Preview Production Build
 
 ```bash
 npm run preview
@@ -152,9 +186,9 @@ npm run preview
 
 ---
 
-## 📱 Responsive Design
+# 📱 Responsive Design
 
-The application is optimized for:
+Optimized for:
 
 - 💻 Desktop
 - 💼 Laptop
@@ -163,70 +197,98 @@ The application is optimized for:
 
 ---
 
-## 🌟 Future Enhancements
+# 🎯 Core Functionalities
 
-- 🌙 Dark Mode
-- 🔐 User Authentication
-- ❤️ Watch Later
-- 📃 Playlists
-- 🎙 Voice Search
-- 🔔 Notifications
-- 💬 Comment System
-- 📈 Infinite Scrolling
-- 👥 User Subscriptions
+## Home Page
+
+- Trending videos
+- Category sidebar
+- Responsive grid layout
+
+## Search
+
+- Search YouTube videos
+- Dynamic search results
+- Responsive interface
+
+## Video Player
+
+- Embedded player
+- Channel information
+- Like count
+- View count
+- Publish date
+- Recommended videos
 
 ---
 
-## 🤝 Contributing
+# 🌟 Upcoming Features
 
-Contributions are welcome!
+- 🔐 Firebase Authentication
+- 🌙 Dark Mode
+- ❤️ Watch Later
+- 📂 Playlists
+- 🔔 Notifications
+- 💬 Comments
+- 🎙 Voice Search
+- 📈 Infinite Scroll
+- 👤 User Profiles
 
-1. Fork the repository.
+---
 
-2. Create a feature branch.
+# 🚀 Deployment
+
+This project is deployed using **Vercel**.
+
+To deploy:
+
+```bash
+npm run build
+```
+
+Import the repository into Vercel and add:
+
+```
+VITE_API_KEY=YOUR_YOUTUBE_API_KEY
+```
+
+as an environment variable.
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
 
 ```bash
 git checkout -b feature/new-feature
-```
-
-3. Commit your changes.
-
-```bash
-git commit -m "Added new feature"
-```
-
-4. Push your branch.
-
-```bash
+git commit -m "Add new feature"
 git push origin feature/new-feature
 ```
 
-5. Open a Pull Request.
+Then open a Pull Request.
 
 ---
 
-## 📄 License
+# 📄 License
 
-This project is licensed under the **MIT License**.
-
----
-
-## 👨‍💻 Author
-
-**Your Name**
-
-- GitHub: https://github.com/yourusername
-- LinkedIn: https://linkedin.com/in/yourprofile
-- Email: your@email.com
+This project is licensed under the MIT License.
 
 ---
 
-## ⭐ Show Your Support
+# 👩‍💻 Author
 
-If you like this project, consider giving it a ⭐ on GitHub!
+**Pragati Pandey**
+
+- GitHub: https://github.com/pragatipandey25
+- Repository: https://github.com/pragatipandey25/Streamify
 
 ---
 
-<p align="center">
-Made with ❤️ using React, Vite, and the YouTube Data API
-</p>
+<div align="center">
+
+### ⭐ If you found this project useful, consider giving it a star!
+
+**Made with ❤️ using React, Vite, and the YouTube Data API**
+
+</div>
